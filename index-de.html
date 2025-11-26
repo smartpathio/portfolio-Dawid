@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dawid Luchowski — Visitenkarte (DE)</title>
+  <meta name="description" content="Dawid — ich entwickle Systeme, die Zeit sparen und klüger verkaufen. Datenanalyse, Visualisierungen und Module, die funktionieren." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Dawid Luchowski — Visitenkarte" />
+  <meta property="og:description" content="Klare Absichten, klare Beziehungen und veröffentlichungsfertige Materialien. One‑page Portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/dawid-luchowski-profil.jpg" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="lang-switch" aria-label="Sprachauswahl">
+    <a class="lang-btn" href="index-pl.html" title="Polski">
+      <span class="lang-flag"><img src="assets/flags/pl.svg" alt="" aria-hidden="true"></span> PL
+    </a>
+    <a class="lang-btn" href="index-en.html" title="English">
+      <span class="lang-flag"><img src="assets/flags/gb.svg" alt="" aria-hidden="true"></span> EN
+    </a>
+    <a class="lang-btn active" href="index-de.html" title="Deutsch">
+      <span class="lang-flag"><img src="assets/flags/de.svg" alt="" aria-hidden="true"></span> DE
+    </a>
+  </nav>
+
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Dawid — ich entwickle Systeme, die Ihre Zeit sparen und klüger verkaufen</h1>
+      <p>Die Zusammenarbeit mit mir bedeutet klare Absichten, klare Beziehungen und veröffentlichungsfertige Materialien. Wir bauen Vertrauen und Ergebnisse ohne unnötige Komplikationen.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section card" aria-labelledby="o-mnie">
+      <h2 id="o-mnie">Über mich</h2>
+      <div class="about">
+        <figure class="about-photo">
+          <img src="images/dawid-luchowski-profil.jpg" alt="Dawid Luchowski — Entwickler von Verkaufs- und Visualsystemen" />
+          <figcaption>Dawid Luchowski — Entwickler von Verkaufs- und Visualsystemen</figcaption>
+        </figure>
+        <div class="about-text">
+          <p>Ich bin Praktiker von Systemen: Datenanalyse, Visualisierungen, schnelle Implementierungen. Ich verbinde Ästhetik mit Pragmatismus, damit Ihre Materialien sofort wirken — geschäftlich und für die Marke.</p>
+          <p>Mein Ansatz: kleine, gut gemachte Module, die skalieren. Minimum Chaos, Maximum Effekt.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="analiza">
+      <h2 id="analiza">Analyse und Beispielvisualisierung</h2>
+      <p>So präsentiere ich Erkenntnisse: einfach, klar und auf den Punkt. Unten eine Beispielvisualisierung mit Quartalsdaten.</p>
+      <div class="chart-wrap">
+        <canvas id="chart-pl" aria-label="Quartalsumsatz-Diagramm" role="img"></canvas>
+      </div>
+      <div class="insights">
+        <article class="insight">
+          <h3>Was zeigt das Diagramm</h3>
+          <p>Steigende Umsätze über die Quartale — stabiler Trend und vorhersehbares Wachstum.</p>
+        </article>
+        <article class="insight">
+          <h3>Wie man es nutzt</h3>
+          <p>Planen Sie Kampagnen und Budgets im Quartalsrhythmus, mit Fokus auf Q3–Q4, wo der Effekt am stärksten ist.</p>
+        </article>
+      </div>
+      <noscript><p>Die Visualisierung erfordert aktiviertes JavaScript.</p></noscript>
+    </section>
+
+    <section class="section card" aria-labelledby="case">
+      <h2 id="case">Case study</h2>
+      <div class="case-grid">
+        <article class="case">
+          <h3>Marktbericht</h3>
+          <p>Analyse des Elektrofahrzeugmarkts in Polen: Erkenntnisse, Visualisierungen, Empfehlungen. Format: Präsentations‑PDF.</p>
+          <a href="Analiza-rynku-EV-Polska-2025.pdf" download class="btn">📥 Bericht herunterladen (PDF)</a>
+          <a href="reports/ev-2025-de.html" class="btn">🔎 Online‑Vorschau</a>
+        </article>
+        <article class="case">
+          <h3>Portfolio‑App</h3>
+          <p>Einseitige Seite mit Angebot, Kompetenzen und Mikro‑Visualisierungen. Format: Web‑Demo, bereit zur Veröffentlichung.</p>
+        </article>
+        <article class="case">
+          <h3>Datenautomatisierungen</h3>
+          <p>Cleansing, Validierung, zyklische Berichte. Schnelle, wiederholbare Module — ohne manuelle Klickerei.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="tech">
+      <h2 id="tech">Technologien</h2>
+      <ul class="tech-list">
+        <li><strong>Python:</strong> Analytik, Automatisierungen</li>
+        <li><strong>Colab:</strong> schnelle Prototypen und Berichte</li>
+        <li><strong>HTML/CSS/JS:</strong> Frontend und Visualisierungen</li>
+        <li><strong>Chart.js:</strong> klare Diagramme</li>
+        <li><strong>SEO/Struktur:</strong> Ordnung und Indexierung</li>
+      </ul>
+    </section>
+
+    <section class="section card" aria-labelledby="kontakt">
+      <h2 id="kontakt">Kontakt</h2>
+      <div class="contact">
+        <p><strong>E‑Mail:</strong> daw760813@gmail.com</p>
+        <p>Möchten Sie sprechen? Ich bereite einen Aktionsplan und Zeitrahmen vor.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Dawid Luchowski — Visitenkarte</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

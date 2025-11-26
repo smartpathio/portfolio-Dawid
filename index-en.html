@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dawid Luchowski — Portfolio (EN)</title>
+  <meta name="description" content="Dawid — I create systems that save time and sell smarter. Data analysis, visualizations, and modules that work." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Dawid Luchowski — Portfolio" />
+  <meta property="og:description" content="Clear intentions, clear relations, and ready-to-publish materials. One-page portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/dawid-luchowski-profil.jpg" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="lang-switch" aria-label="Language selection">
+    <a class="lang-btn" href="index-pl.html" title="Polski">
+      <span class="lang-flag"><img src="assets/flags/pl.svg" alt="" aria-hidden="true"></span> PL
+    </a>
+    <a class="lang-btn active" href="index-en.html" title="English">
+      <span class="lang-flag"><img src="assets/flags/gb.svg" alt="" aria-hidden="true"></span> EN
+    </a>
+    <a class="lang-btn" href="index-de.html" title="Deutsch">
+      <span class="lang-flag"><img src="assets/flags/de.svg" alt="" aria-hidden="true"></span> DE
+    </a>
+  </nav>
+
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Dawid — I build systems that save your time and sell smarter</h1>
+      <p>Working with me means clear intentions, clear relations, and ready-to-publish materials. We build trust and results without unnecessary complications.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section card" aria-labelledby="about">
+      <h2 id="about">About me</h2>
+      <div class="about">
+        <figure class="about-photo">
+          <img src="images/dawid-luchowski-profil.jpg" alt="Dawid Luchowski — creator of sales and visual systems" />
+          <figcaption>Dawid Luchowski — creator of sales and visual systems</figcaption>
+        </figure>
+        <div class="about-text">
+          <p>I am a systems practitioner: data analysis, visualizations, fast implementations. I combine aesthetics with pragmatism so your materials work immediately — commercially and for branding.</p>
+          <p>My approach: small, well-crafted modules that scale. Minimum chaos, maximum effect.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="analysis">
+      <h2 id="analysis">Analysis and sample visualization</h2>
+      <p>This is how I present insights: simple, clear, and to the point. Below is a sample quarterly data visualization.</p>
+      <div class="chart-wrap">
+        <canvas id="chart-en" aria-label="Quarterly revenue chart" role="img"></canvas>
+      </div>
+      <div class="insights">
+        <article class="insight">
+          <h3>What the chart shows</h3>
+          <p>Growing revenues across quarters — a stable trend and predictable growth.</p>
+        </article>
+        <article class="insight">
+          <h3>How to use it</h3>
+          <p>Plan campaigns and budgets quarterly, focusing on Q3–Q4 where the effect is strongest.</p>
+        </article>
+      </div>
+      <noscript><p>Visualization requires JavaScript enabled.</p></noscript>
+    </section>
+
+    <section class="section card" aria-labelledby="case">
+      <h2 id="case">Case study</h2>
+      <div class="case-grid">
+        <article class="case">
+          <h3>Market report</h3>
+          <p>Analysis of the electric vehicle market in Poland: insights, visualizations, recommendations. Format: presentation PDF.</p>
+          <a href="Analiza-rynku-EV-Polska-2025.pdf" download class="btn">📥 Download report (PDF)</a>
+          <a href="reports/ev-2025-en.html" class="btn">🔎 Online preview</a>
+        </article>
+        <article class="case">
+          <h3>Portfolio app</h3>
+          <p>One-page site presenting offer, skills, and micro-visualizations. Format: web demo, ready to publish.</p>
+        </article>
+        <article class="case">
+          <h3>Data automation</h3>
+          <p>Cleaning, validation, cyclical reports. Fast, repeatable modules — no manual drudgery.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="tech">
+      <h2 id="tech">Technologies</h2>
+      <ul class="tech-list">
+        <li><strong>Python:</strong> analytics, automation</li>
+        <li><strong>Colab:</strong> quick prototypes and reports</li>
+        <li><strong>HTML/CSS/JS:</strong> frontend and visualizations</li>
+        <li><strong>Chart.js:</strong> clear charts</li>
+        <li><strong>SEO/structure:</strong> order and indexing</li>
+      </ul>
+    </section>
+
+    <section class="section card" aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <div class="contact">
+        <p><strong>Email:</strong> daw760813@gmail.com</p>
+        <p>Want to talk? I will prepare an action plan and timeline.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Dawid Luchowski — portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EV Bericht Polen 2025 — Dawid Luchowski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family:'Nunito',sans-serif; background:#d9f5e5; margin:0; padding:0; color:#333; font-size:15px; line-height:1.5; }
+    .page { max-width:800px; margin:auto; padding:1rem; }
+    .section { padding:1rem; margin:0.8rem 0; background:#fff; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    h1,h2 { color:#2a6a4f; font-size:1.3rem; }
+    canvas { display:block; margin:0.5rem auto; max-width:100%; max-height:220px; }
+    .btn { display:inline-block; margin-top:0.5rem; padding:0.5rem 1rem; background:#2a6a4f; color:#fff; text-decoration:none; border-radius:6px; font-size:0.9rem; }
+    table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+    th,td { border:1px solid #ccc; padding:6px; text-align:left; }
+    .table-wrapper { overflow-x:auto; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="section">
+      <h1>EV Bericht Polen 2025</h1>
+      <p>Analyse des Elektrofahrzeugmarktes in Polen. Trends, Barrieren und Empfehlungen.</p>
+      <a href="../EV-Bericht-Polen-2025.pdf" download class="btn">📥 Vollständigen Bericht herunterladen (PDF)</a>
+    </header>
+
+    <section class="section">
+      <h2>Management-Zusammenfassung</h2>
+      <p>Der EV-Markt in Polen hat 60.000 Zulassungen überschritten. Schnelles Wachstum der Ladeinfrastruktur, Expansion im Flotten- und Premiumsegment sowie steigendes ökologisches Bewusstsein. Barrieren: Preis, Reichweite und Ladeverfügbarkeit außerhalb großer Städte.</p>
+      <blockquote>„2025 wird ein Wendepunkt für die Elektromobilität in Polen sein...” — PSPA</blockquote>
+    </section>
+
+    <section class="section">
+      <h2>EV-Zulassungen (2020–2025)</h2>
+      <canvas id="barChart"></canvas>
+      <p>Dynamisches Wachstum — Prognosen zeigen über 100.000 Zulassungen bis 2027.</p>
+    </section>
+
+    <section class="section">
+      <h2>Fahrzeugtypen-Anteil</h2>
+      <canvas id="pieChart"></canvas>
+      <p>BEVs machen 63% aus, PHEVs 37%. Der Trend zeigt eine weitere Dominanz der BEVs.</p>
+    </section>
+
+    <section class="section">
+      <h2>Marktsegmentierung</h2>
+      <div class="table-wrapper">
+        <table>
+          <tr><th>Segment</th><th>Merkmale</th><th>Beispielmarken</th></tr>
+          <tr><td>Firmenflotten</td><td>Größter Anteil, niedrigere Betriebskosten</td><td>Hyundai, Volkswagen, Tesla</td></tr>
+          <tr><td>Privatkunden</td><td>Subventionen, Stadtfahrzeuge</td><td>Fiat, Nissan, Dacia</td></tr>
+          <tr><td>Premium</td><td>Prestige, Innovation, lange Reichweite</td><td>Tesla, BMW, Mercedes</td></tr>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="page">
+    <section class="section">
+      <h2>SWOT-Analyse</h2>
+      <div class="table-wrapper">
+        <table>
+          <tr><th>Stärken</th><th>Schwächen</th><th>Chancen</th><th>Risiken</th></tr>
+          <tr>
+            <td>Staatliche Unterstützung, schnelles Marktwachstum</td>
+            <td>Hoher Kaufpreis, begrenzte Reichweite</td>
+            <td>Neue Subventionen, Ausbau der Ladeinfrastruktur</td>
+            <td>Mangel an Ladegeräten im ländlichen Raum, regulatorische Unsicherheit</td>
+          </tr>
+        </table>
+      </div>
+      <p>Die SWOT-Analyse zeigt solide Grundlagen, hebt jedoch Infrastruktur- und Bildungsbedarf hervor.</p>
+    </section>
+
+    <section class="section">
+      <h2>Fallstudie: InPost</h2>
+      <p>InPost hat über 500 EVs in seine Kurierflotte eingeführt und in eigene Ladegeräte investiert. Ergebnisse: geringere Kosten, verbessertes Image und CO₂-Reduktion.</p>
+    </section>
+
+    <section class="section">
+      <h2>Prognosen und Empfehlungen</h2>
+      <ul>
+        <li>EV-Zulassungen in Polen werden bis 2027 über 100.000 erreichen.</li>
+        <li>Stärkstes Wachstum im Flotten- und Premiumsegment.</li>
+        <li>Empfehlungen: Investitionen in ultraschnelle Ladegeräte, Kundenaufklärung, B2B-Unterstützung.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Quellen</h2>
+      <p>PSPA, Samar, IBRM, ACEA, EV-Database, Polityka Insight, BloombergNEF, EV-Box</p>
+    </section>
+  </div>
+
+  <script>
+    const colors = { blue: '#4a90e2', red: '#e63946', grey: '#7d7d7d' };
+
+    new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['2020','2021','2022','2023','2024','2025'],
+        datasets: [{
+          label: 'EV-Zulassungen',
+          data: [10000,20000,30000,40000,60000,70000],
+          backgroundColor: colors.blue
+        }]
+      },
+      options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ display:false } } }
+    });
+
+    new Chart(document.getElementById('pieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['BEV (63%)','PHEV (37%)'],
+        datasets: [{ data:[63,37], backgroundColor:[colors.red, colors.grey] }]
+      },
+      options: { responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:'bottom', labels:{ font:{ size:12 } } } } }
+    });
+  </script>
+</body>
+</html>
