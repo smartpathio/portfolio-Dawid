@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dawid Luchowski — Wizytówka (PL)</title>
+  <meta name="description" content="Dawid — tworzę systemy, które oszczędzają czas i sprzedają mądrzej. Analiza danych, wizualizacje i moduły, które działają." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Dawid Luchowski — Wizytówka" />
+  <meta property="og:description" content="Jasne intencje, jasne relacje i gotowe materiały do publikacji. One-page portfolio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="dawid-luchowski-profil.jpg" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="lang-switch" aria-label="Wybór języka">
+    <a class="lang-btn active" href="index-pl.html" title="Polski">
+      <span class="lang-flag"><img src="pl.svg" alt="Polski" aria-hidden="true"></span> PL
+    </a>
+    <a class="lang-btn" href="index-en.html" title="English">
+      <span class="lang-flag"><img src="gb.svg" alt="English" aria-hidden="true"></span> EN
+    </a>
+    <a class="lang-btn" href="index-de.html" title="Deutsch">
+      <span class="lang-flag"><img src="de.svg" alt="Deutsch" aria-hidden="true"></span> DE
+    </a>
+  </nav>
+
+  <header class="hero" role="banner">
+    <div class="hero-content">
+      <h1>Dawid — tworzę systemy, które oszczędzają Twój czas i sprzedają mądrzej</h1>
+      <p>Współpraca ze mną to jasne intencje, jasne relacje i gotowe materiały do publikacji. Budujemy zaufanie i efekty bez zbędnych komplikacji.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section card" aria-labelledby="o-mnie">
+      <h2 id="o-mnie">O mnie</h2>
+      <div class="about">
+        <figure class="about-photo">
+          <img src="dawid-luchowski-profil.jpg" alt="Dawid Luchowski — twórca systemów sprzedażowych i wizualnych" />
+          <figcaption>Dawid Luchowski — twórca systemów sprzedażowych i wizualnych</figcaption>
+        </figure>
+        <div class="about-text">
+          <p>Jestem praktykiem systemów: analityka danych, wizualizacje, szybkie wdrożenia. Łączę estetykę z pragmatyzmem, żeby Twoje materiały od razu działały — biznesowo i wizerunkowo.</p>
+          <p>Moje podejście: małe, dobrze zrobione moduły, które się skalują. Minimum chaosu, maksimum efektu.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="analiza">
+      <h2 id="analiza">Analiza i przykład wizualizacji</h2>
+      <p>Tak prezentuję wnioski: prosto, klarownie i na temat. Poniżej przykładowa wizualizacja z danych kwartalnych.</p>
+      <div class="chart-wrap">
+        <canvas id="chart-pl" aria-label="Wykres kwartalny przychodów" role="img"></canvas>
+      </div>
+      <div class="insights">
+        <article class="insight">
+          <h3>Co widać na wykresie</h3>
+          <p>Rosnące przychody w kolejnych kwartałach — stabilny trend i przewidywalny wzrost.</p>
+        </article>
+        <article class="insight">
+          <h3>Jak to wykorzystać</h3>
+          <p>Planowanie kampanii i budżetów w rytmie kwartalnym, z naciskiem na Q3–Q4, gdzie efekt jest najwyższy.</p>
+        </article>
+      </div>
+      <noscript><p>Wizualizacja wymaga włączonego JavaScript.</p></noscript>
+    </section>
+
+    <section class="section card" aria-labelledby="case">
+      <h2 id="case">Case study</h2>
+      <div class="case-grid">
+        <article class="case">
+          <h3>Raport rynkowy</h3>
+          <p>Analiza rynku samochodów elektrycznych w Polsce: wnioski, wizualizacje, rekomendacje. Format: PDF prezentacyjny.</p>
+          <a href="Analiza-rynku-EV-Polska-2025.pdf" download class="btn">📥 Pobierz raport (PDF)</a>
+          <a href="ev-landing-pl.html" class="btn">🔎 Podgląd online</a>
+        </article>
+        <article class="case">
+          <h3>Aplikacja wizytówkowa</h3>
+          <p>Jednostronicowa strona prezentująca ofertę, kompetencje i mikro‑wizualizacje. Format: web demo, gotowe do publikacji.</p>
+        </article>
+        <article class="case">
+          <h3>Automatyzacje danych</h3>
+          <p>Cleaning, walidacja, raporty cykliczne. Szybkie, powtarzalne moduły — bez ręcznej klepanki.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section card" aria-labelledby="tech">
+      <h2 id="tech">Technologie</h2>
+      <ul class="tech-list">
+        <li><strong>Python:</strong> analityka, automatyzacje</li>
+        <li><strong>Colab:</strong> szybkie prototypy i raporty</li>
+        <li><strong>HTML/CSS/JS:</strong> front i wizualizacje</li>
+        <li><strong>Chart.js:</strong> klarowne wykresy</li>
+        <li><strong>SEO/struktura:</strong> porządek i indeksacja</li>
+      </ul>
+    </section>
+
+    <section class="section card" aria-labelledby="kontakt">
+      <h2 id="kontakt">Kontakt</h2>
+      <div class="contact">
+        <p><strong>Email:</strong> daw760813@gmail.com</p>
+        <p>Chcesz porozmawiać? Przygotuję propozycję działań i terminów.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Dawid Luchowski — wizytówka</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
